@@ -52,7 +52,7 @@ import FooterComp from './FooterComp.vue'
 .banner{
     background-image: 
         url('@/assets/images/img_1/green_bg.png'),
-        url('@/assets/images/img_1/cassava.jpg');
+        url('@/assets/images/img_1/hero.jpg');
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -108,11 +108,12 @@ import FooterComp from './FooterComp.vue'
 
 @media only screen and (max-width: 600px) {
     .banner{
-
+      
       &__row {
         display: flex;
         align-items: center;
-        height: 85vh;
+        height: 80vh;
+        // margin-top: 2rem;
     }
 
       &__col { 
