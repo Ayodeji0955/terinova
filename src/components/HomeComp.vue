@@ -14,7 +14,9 @@
                           <span class="banner__col--sub-desc">Africa’s most pressing food problems. </span>
                       </p>
                       <div class="banner__cta">
-                          <button  type="button"  class="banner__cta--btn banner__cta--button">Partner with Us</button>
+                        <a href="https://drive.google.com/file/d/1RmQeZb6VETZQPcU6bjapUEz5vmJMhTft/view"  download target="_blank">
+                            <button class="banner__cta--btn banner__cta--button">Partner with Us</button>
+                        </a>
                       </div>
                     </div>
               </div>
@@ -65,7 +67,7 @@ import FooterComp from './FooterComp.vue'
     &__row {
       display: flex;
       align-items: center;
-      height: 90vh;
+      height: 80vh;
 
     }
 
@@ -73,7 +75,6 @@ import FooterComp from './FooterComp.vue'
       
       &--header{
           display: block;
-
         }
 
         &--title {
@@ -89,8 +90,8 @@ import FooterComp from './FooterComp.vue'
         }
 
         &--sub-desc{
-            font-size: $font-xrg;
-            font-weight: map-get($font-weights, bold);
+            font-size: $font-rg;
+            font-weight: map-get($font-weights, heavy);
             color: $color-light;
             display: block;
         }
@@ -108,33 +109,33 @@ import FooterComp from './FooterComp.vue'
 
 @media only screen and (max-width: 600px) {
     .banner{
+        height: 90vh;
       
       &__row {
-        display: flex;
-        align-items: center;
-        height: 65vh;
+            display: flex;
+            align-items: center;
+            height: 65vh;
         // margin-top: 2rem;
-    }
+        }
 
       &__col { 
       
       &--header{
           display: inline-block;
-
+          padding-top: 1.5rem;
         }
 
         &--title {
-            font-size: $font-md;
+            font-size: $font-xrg;
         }
 
         &--desc{
             padding-top: 2rem;
-            padding-bottom: 3rem;
+            padding-bottom: 1.5rem;
         }
 
         &--sub-desc{
             font-size: $font-xsm;
-            font-weight: map-get($font-weights, bold);
         }
     }
 

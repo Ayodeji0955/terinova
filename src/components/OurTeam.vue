@@ -1,15 +1,15 @@
 <template>
-    <div class="team">
+    <div class="team" id="our-team">
         <div class="container">
             <h1 class="team__container--header">Our Team</h1>
-            <div class="row">
+            <div class="row team__new">
                 <div class="col team__col">
                     <div class="card team__card mb-3" style="max-width: 700px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src='~@/assets/images/img_1/abdoul.jpg' class="img-fluid rounded-start story__sub-col--img-groupy">
+                                <img src='~@/assets/images/img_1/abdo.jpg' class="img-fluid rounded-start team__col--img-groupy" style="max-width: 100%;">
                             </div>
-                            <div class="col-md-8 align-self-center">
+                            <div class="col-md-8 align-self-end">
                                 <div class="card-body">
                                     <h5 class="card-title"> 
                                         <span class="team__card-title--desc">Abdoul Raouf </span>
@@ -30,14 +30,14 @@
                 <div class="col team__col">
                     <div class="card team__card mb-3" style="max-width: 700px;">
                         <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src='~@/assets/images/img_1/espérance.jpg' class="img-fluid rounded-start story__sub-col--img-groupx">
+                            <div class="col-md-4 team__sub-col">
+                                <img src='~@/assets/images/img_1/esperance.jpg' class="img-fluid rounded-start team__col--img-groupx" style="max-width: 100%;">
                             </div>
-                            <div class="col-md-8 align-self-center">
+                            <div class="col-md-8 align-self-end team__sub-col">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <span class="team__card-title--desc">Espérance </span>
-                                        <span class="team__card-title--bold-desc">Déo Gratias</span>
+                                        <span class="team__card-title--desc">Espérance Déo</span>
+                                        <span class="team__card-title--bold-desc">Gratias Codjia</span>
                                     </h5>
                                     <p class="card-text">
                                         <span class="team__card-title--sub-desc">Ph.D. Plant Breeding, </span>
@@ -73,8 +73,8 @@
             font-family: 'Inter';
             font-style: normal;
             color: $color-deep-green;
-            font-weight: map-get($font-weights, medium);
-            // font-size: $font-xrg;
+            font-weight: map-get($font-weights, classic);
+            font-size: $font-md;
             text-align: center;
             padding-bottom: 3rem;
         }
@@ -90,7 +90,7 @@
         font-style: normal;
 
         &--desc{
-            color: $color-primary;
+            color: $color-deep-green;
             font-weight: map-get($font-weights, medium);
             font-size: $font-rg;
             display: block;
@@ -103,7 +103,7 @@
         }
         
         &--sub-desc{
-            color: $color-primary;
+            color: $color-deep-green;
             font-weight: map-get($font-weights, heavy);
             font-size: $font-sm;
             // display: block;
@@ -123,20 +123,27 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .team {
-        padding: 4rem 2rem;
+        padding: 1rem 2rem;
 
-        &__col {
-            padding-top: 2rem;
+        &__container {
+
+            &--header {
+                font-size: $font-xrg;
+                padding-bottom: 1.5rem;
+            }
         }
+
+
+        // &__card {
+        //     max-width: 500px;
+        // }
+
 
         &__card-title {
-        padding:  2rem;
+            padding:  2rem;
         
-        &__card {
-            max-width: 500px;
-        }
 
         &--desc{
             font-size: $font-sm;
@@ -157,11 +164,7 @@
         }
     }
 
-        // &__sub-col {
-        //    &--img{
-        //      width: 50%;
-        //    } 
-        // }
     }
+
 }
 </style>

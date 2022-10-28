@@ -52,16 +52,19 @@
 
     &__col {
         padding-top: .5rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        
         // .text-center{
         //     text-align: left;
         // }
         &--img-elab, &--img-afri, &--img-giz {
-            width: 50%;
+            width: 80%;
         }
 
         &--img-pau{
             padding-right: 2rem;
-            width: 50%;
+            width: 60%;
             text-align: center;
         }
 
@@ -78,6 +81,7 @@
             padding-top: 3rem;
             color: $color-light;
             font-size: $font-sm;
+            font-weight: map-get($font-weights, regular);
             text-align: center;
         }
     }
@@ -106,6 +110,8 @@
 
         &__col {
             padding-top: 2rem;
+            padding-right: 0rem;
+            padding-left: 0rem;
             // text-align: center;
             width: 50%;
 
@@ -129,8 +135,9 @@
         &__sub-col {
 
             &--text{
-                    padding-top: .5rem;
+                    padding-top: 2rem;
                     font-size: $font-xsm;
+                    font-weight: map-get($font-weights, heavy);
                 }
         }
     }
